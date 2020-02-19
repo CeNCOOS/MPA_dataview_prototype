@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="knb-lter-sbc.74.10"
+  system="https://pasta.edirepository.org"
+  xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://nis.lternet.edu/schemas/EML/eml-2.1.1/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication"
+    order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=sbc,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>uid=mobrien,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>uid=lkui,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier>knb-lter-sbc.74</alternateIdentifier>
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/817d2c24ebd78621869e17d94ba0df0c</alternateIdentifier>
+    <shortName>Kelp biomass from landsat 5, 7, and 8</shortName>
+    <title>SBC LTER: Time series of quarterly NetCDF files of kelp biomass in the canopy from Landsat 5, 7 and 8, 1984 - 2016 (ongoing)</title>
+    <creator>
+      <organizationName>Santa Barbara Coastal LTER</organizationName>
+      <address>
+        <deliveryPoint>Marine Science Institute,University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>sbclter@msi.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Tom W</givenName>
+        <surName>Bell</surName>
+      </individualName>
+      <electronicMailAddress>tbell@eri.ucsb.edu</electronicMailAddress>
+      <userId directory="http://orcid.org/">https://orcid.org/0000-0002-0173-2866</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Kyle C</givenName>
+        <surName>Cavanaugh</surName>
+      </individualName>
+      <electronicMailAddress>kcavanaugh@geog.ucla.edu</electronicMailAddress>
+      <userId directory="http://orcid.org/">https://orcid.org/0000-0002-3313-0878</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>David A</givenName>
+        <surName>Siegel</surName>
+      </individualName>
+      <electronicMailAddress>davey@eri.ucsb.edu</electronicMailAddress>
+      <userId directory="http://orcid.org/">https://orcid.org/0000-0003-1674-3055</userId>
+    </creator>
+    <pubDate>2017-11-13</pubDate>
+    <language>English</language>
+    <abstract>
+      <para>
+  This data file represents a time series of canopy biomass of the giant
+  kelp, <emphasis>Macrocystis pyrifera</emphasis>, derived from Landsat
+  5 Thematic Mapper (TM), Landsat 7 Enhanced Thematic Mapper Plus
+  (ETM+), and Landsat 8 Operational Land Imager (OLI) satellite imagery,
+  along with relevant metadata. The kelp canopy is composed of the
+  portions of fronds floating on the surface of the water. Biomass data
+  (wet weight, kg) are given for individual 30 x 30 meter pixels in the
+  coastal areas extending from near Año Nuevo to San Diego, CA,
+  including the Northern and Southern Channel Islands.
+</para>
+      <para>
+  Data were derived from the three Landsat sensors listed above.
+  Observations are made on a 16 day repeat cycle, for each instrument,
+  but the temporal coverage is irregular because of cloud cover,
+  instrument failure, and the mission length of each sensor (TM: 1984 –
+  2011, ETM+: 1999 – present, OLI: 2013 – present). Estimates of kelp
+  canopy biomass are derived from the relationship between satellite
+  surface reflectance and empirical measurements of kelp canopy biomass
+  in long-term SBC LTER study plots obtained using SCUBA. The different
+  Landsat sensors were calibrated to each other using simulated Landsat
+  data derived from hyperspectral imagery. Missing data due to the ETM+
+  scan line corrector error were filled using a synchrony-based gap
+  filling method.
+</para>
+      <para>
+  Data are organized into a single NetCDF file and contain the quarterly
+  means for each Landsat pixel across the three sensors. Relevant
+  metadata such as number of Landsat estimates from which the mean was
+  derived, the number of estimates from each sensor, standard error for
+  each quarterly estimate, spatial coordinates, and date are all
+  included in the file. For assistance with the data, please contact
+  sbclter@msi.ucsb.edu.
+</para>
+    </abstract>
+    <keywordSet>
+      <keyword>populations</keyword>
+      <keywordThesaurus>LTER Core Research Areas</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>biomass</keyword>
+      <keyword>canopy</keyword>
+      <keyword>LTER</keyword>
+      <keyword>populations</keyword>
+      <keyword>Santa Barbara Coastal</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary v1</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Kelp Forest</keyword>
+      <keyword>nearshore ocean</keyword>
+      <keyword>populations</keyword>
+      <keyword>remote sensing</keyword>
+      <keywordThesaurus>SBC-LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Anacapa Island</keyword>
+      <keyword>San Clemente Island</keyword>
+      <keyword>San Miguel Island</keyword>
+      <keyword>San Nicolas Island</keyword>
+      <keyword>Santa Barbara Channel Islands</keyword>
+      <keyword>Santa Barbara County</keyword>
+      <keyword>Santa Barbara Island</keyword>
+      <keyword>Santa Catalina Island</keyword>
+      <keyword>Santa Cruz Island</keyword>
+      <keyword>Santa Rosa Island</keyword>
+      <keywordThesaurus>Santa Barbara Coastal LTER Places</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Biomass</keyword>
+      <keyword>Biomass Dynamics</keyword>
+      <keywordThesaurus>Global Change Master Directory (GCMD) v6.0.0.0.0</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Biomass</keyword>
+      <keywordThesaurus>Knowledge Network for Biocomplexity</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Biomass</keyword>
+      <keywordThesaurus>NBII Biocomplexity</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>biomass</keyword>
+      <keyword>kelp biomass</keyword>
+      <keyword>Landsat 5</keyword>
+      <keyword>Landsat 7</keyword>
+      <keyword>Landsat 8</keyword>
+      <keyword>LTER</keyword>
+      <keyword>remote sensing</keyword>
+      <keyword>satellite</keyword>
+      <keyword>wet weight</keyword>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para>The user of SBC LTER data agrees to contact the data owner (i.e., the SBC  investigator responsible for data) prior to publishing. Where appropriate, users whose projects are integrally dependent on SBC LTER 
+data are encouraged to consider   collaboration and/or co-authorship with the data owner.</para>
+          </listitem>
+          <listitem>
+            <para>The user agrees to cite SBC LTER in all publications that use SBC LTER data by   including the following statement in the Acknowledgments: "Data were provided by the  Santa Barbara Coastal LTER, funded by the US National Science Foundation (OCE-1232779)".</para>
+          </listitem>
+          <listitem>
+            <para>The user agrees to send the full citation of any publication using SBC LTER data   to sbclter@msi.ucsb.edu</para>
+          </listitem>
+          <listitem>
+            <para>Users are prohibited from selling or redistributing any data provided by SBC  LTER.</para>
+          </listitem>
+          <listitem>
+            <para>Extensive efforts are made to ensure that online data are accurate and up to date,  but SBC LTER will not take responsibility for any errors that may exist.</para>
+          </listitem>
+          <listitem>
+            <para>The user agrees also to adhere to the Data Use Agreement of the Long Term   Ecological Research Network.</para>
+          </listitem>
+          <listitem>
+            <para>Any violation of the terms of this agreement will result in immediate forfeiture   of the data and loss of access privileges to other SBC LTER data sets.</para>
+          </listitem>
+          <listitem>
+            <para>SBC LTER is committed to protecting the privacy and accuracy of your confidential  information. See our Privacy Policy for more information.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">http://sbc.lternet.edu/</url>
+      </online>
+    </distribution>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Central and Southern California (USA) : Coastal areas along the mainland from near Año Nuevo (San Mateo County) in the north to San Diego in the south. Coastal areas of the eight Northern and Southern Channel Islands</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-122.7832345</westBoundingCoordinate>
+          <eastBoundingCoordinate>-114.04476</eastBoundingCoordinate>
+          <northBoundingCoordinate>37.94752509</northBoundingCoordinate>
+          <southBoundingCoordinate>32.3750</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1984-03-23</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2016-12-31</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact id="sbc-boilerplate-contact_SBC" scope="system" system="sbclter">
+      <positionName>Information Manager, Santa Barbara Coastal LTER</positionName>
+      <address scope="document">
+        <deliveryPoint>Marine Science Institute</deliveryPoint>
+        <deliveryPoint>University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>California</administrativeArea>
+        <postalCode>93106-6150</postalCode>
+        <country>United States</country>
+      </address>
+      <phone phonetype="voice">805 893 2071</phone>
+      <electronicMailAddress>sbclter@msi.ucsb.edu</electronicMailAddress>
+      <onlineUrl>http://sbc.lternet.edu</onlineUrl>
+    </contact>
+    <publisher>
+      <organizationName>Santa Barbara Coastal Long Term Ecological Research Project</organizationName>
+    </publisher>
+    <methods>
+      <methodStep>
+        <description>
+          <para>
+  Estimates of kelp canopy biomass are derived from the relationship
+  between satellite surface reflectance and empirical measurements of
+  kelp canopy biomass in long-term SBC LTER study plots obtained using
+  SCUBA. The different Landsat sensors were calibrated to each other
+  using simulated Landsat data derived from hyperspectral imagery.
+  Missing data due to the ETM+ scan line corrector error were filled
+  using a synchrony-based gap filling method.
+</para>
+
+          <para>
+  Some detailed method can refer to an article: Cavanaugh KC, Siegel DA,
+  Reed DC, Dennison PE (2011) Environmental controls of giant-kelp
+  biomass in the Santa Barbara Channel, California. Mar Ecol Prog Ser
+  429:1-17.
+  <ulink url="https://doi.org/10.3354/meps09141">https://doi.org/10.3354/meps09141</ulink>
+          </para>
+        </description>
+        <protocol>
+          <title>Giant Kelp Canopy Biomass from the Landsat Satellite Sensors (TM, ETM+, OLI) Santa Barbara Coastal LTER 2017</title>
+          <creator>
+            <individualName>
+              <surName>Bell</surName>
+            </individualName>
+          </creator>
+          <distribution>
+            <online>
+              <url function="download">http://sbc.lternet.edu/external/Reef/Protocols/kelp_biomass_landsat/SBC_LTER_Landsat_Protocol_2017.pdf</url>
+            </online>
+          </distribution>
+        </protocol>
+      </methodStep>
+    </methods>
+    <project id="sbc-boilerplate-project_SBC" scope="system" system="sbclter">
+      <title>Santa Barbara Coastal Long Term Ecological Research Project</title>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Daniel</givenName>
+          <surName>Reed</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Marine Science Institute</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-6150</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 8363</phone>
+        <electronicMailAddress>reed@lifesci.ucsb.edu</electronicMailAddress>
+        <role>Principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>John</givenName>
+          <surName>Melack</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Bren School of Environmental Science and Management</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-5131</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 3879</phone>
+        <electronicMailAddress>melack@lifesci.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Sally</givenName>
+          <surName>Holbrook</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Ecology, Evolution and Marine Biology</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-9620</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 3777</phone>
+        <electronicMailAddress>holbrook@lifesci.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Steven</givenName>
+          <surName>Gaines</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Marine Science Institute</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-9620</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 3764</phone>
+        <electronicMailAddress>gaines@msi.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>David</givenName>
+          <surName>Siegel</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Institute for Computational Earth System Science</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-3060</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 4547</phone>
+        <electronicMailAddress>davey@icess.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <abstract>
+        <section>
+          <para>The primary research objective of the Santa Barbara Coastal LTER is to investigate
+            the importance of land and ocean processes in structuring giant kelp
+            (<emphasis>Macrocystis pyrifera</emphasis> ) forest ecosystems. As in many temperate
+            regions, the shallow rocky reefs in the Santa Barbara Channel, California, are dominated
+            by giant kelp forests. Because of their close proximity to shore, kelp forests are
+            influenced by physical and biological processes occurring on land as well as in the open
+            ocean. SBC LTER research focuses on measuring and modeling the patterns, transport, and
+            processing of material constituents (e.g., nutrients, carbon, sediment, organisms, and
+            pollutants) from terrestrial watersheds and the coastal ocean to these reefs.
+            Specifically, we are examining the effects of these material inputs on the primary
+            production of kelp, and the population dynamics, community structure, and trophic
+            interactions of kelp forest ecosystems.</para>
+        </section>
+      </abstract>
+      <funding>
+        <section>
+          <para>NSF Award OCE-0620276</para>
+        </section>
+      </funding>
+    </project>
+    <otherEntity>
+      <entityName>Satellite kelp biomass between 1984 and 2016 (ongoing)</entityName>
+      <entityDescription>Wet biomass (kg) of giant kelp (Macrocystis pyrifera) from Landsat 5, 7 and 8 imagery, in central and southern California</entityDescription>
+      <physical>
+        <objectName>LandsatKelpBiomass.nc</objectName>
+        <size unit="byte">48472084</size>
+        <authentication method="MD5">9255b1dd8afb1f4c28d0d7e4514085c1</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>NA</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/74/10/bafac8544dcf45fb981d02daa794781d</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+  </dataset>
+</eml:eml>

@@ -8,6 +8,10 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+dask-worker-space/
+chl_merged_dataset/
+NPP_winsoft_dataset/
+sst_dataset/
 build/
 develop-eggs/
 dist/
