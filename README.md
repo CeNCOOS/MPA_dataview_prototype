@@ -12,4 +12,5 @@ Currently there are three notebooks:
 
 ### Scraping `Merged Chlorophyll-a` and `Merged NPP` datasets ###
 These data need to be scraped and formatted from the Wimsoft website. A shell script for downloading and a python script for formatting each data set are found at:
-1. [Remote Sensing](./Data/Remote Sensing Data/)
+
+[Remote Sensing](./Data/remoteSensingData/)
