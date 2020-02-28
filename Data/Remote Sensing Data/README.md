@@ -13,3 +13,8 @@ Data are pulled from the winsoft website using a shell script called `pull_merge
 Data files are stored as daily HDF4 files, which are on a grid of 540(w) x 417(h) with approximately 4km step. The __upper-left corner = (45N, -140E)__. the __lower-right corner is (30.03597N, -115.5454E)__
 
  Pixel values of 1 correspond to the coastline, pixel values of 255 (white) are considered missing data or land mask.
+
+
+## Converting to NetCDF ##
+
+After data are downloaded, run the `merge_chl_files.py` and `merge_npp_files.py`. This script will convert the pixel values into proper scientific units and out put a single netcdf file for each year.
