@@ -1,5 +1,5 @@
 #!/bin/bash
-for i in $(seq 1996 2019); do
+for i in $(seq 1996 2020); do
   FILENAME=npp_$i.zip;
   URL=http://www.wimsoft.com/CC4km/$FILENAME
   echo 'Pulling '$FILENAME' from '$URL;

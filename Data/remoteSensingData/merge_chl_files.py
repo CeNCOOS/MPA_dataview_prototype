@@ -17,14 +17,14 @@ def fix_coordinate(ds,latitude,longitude):
     '''
     Data is gridded but the coordinates are not included in the file. For this
     the placeholder coordintes (fakedimensions) should be replaced with
-    actual latitude and longitude values. 
-    
-    Parameters: 
+    actual latitude and longitude values.
+
+    Parameters:
     ds (xr.Dataset): single day raw hdf4 file
     latitude (np.array): 1-D array of latitude values
     longitude (np.array): 1-D array of longitude values
-    
-    Returns: 
+
+    Returns:
     ds (xr.Datatset): dataset with proper coordinates and the name corrected
 
     '''
@@ -36,15 +36,15 @@ def fix_coordinate(ds,latitude,longitude):
     return(ds)
 
 def fix_sign_error(ds):
-    ''' 
-    Data erroniously gets read in as a signed-8 bit int, when it should be 
+    '''
+    Data erroniously gets read in as a signed-8 bit int, when it should be
     unsigned. To fix, data with with values > should have a constant 256 added
     to them. Also mask the landvalues and values where no data is available
-    
-    Parameters: 
+
+    Parameters:
     ds (xarry dataset): single hdf file with erroneous values
-  
-    Returns: 
+
+    Returns:
     ds: fixed values
     '''
     chl_array = ds['chl'].values
@@ -56,8 +56,8 @@ def fix_sign_error(ds):
     return ds.where((ds['chl'] != 255) & (ds['chl'] != 1)& (ds['chl'] != 0))
 
 def calculate_chl_conc(ds):
-    ''' 
-    Calculate chlorophyll concentration from pixelvalues 
+    '''
+    Calculate chlorophyll concentration from pixelvalues
     Equation found at http://www.wimsoft.com/CC4km.htm
     '''
     ds['chl'] = 10**(0.015*ds['chl']-2.0)
@@ -75,7 +75,7 @@ def add_time_coordinate(ds):
     return(ds)
 
 def clean_dataset(ds):
-    ''' 
+    '''
     Given a xarray dataset, clean up the data for it to be concatinated into
     an annual dataset. This involves sveral steps:
         - renaming and assigning the latitude and longitude
@@ -84,11 +84,11 @@ def clean_dataset(ds):
         - masking landvalues and null values (pixelValues == 225,1,0)
         - Converting the data from pixelvalue to chlorophyll concentration
         - Adding a time dimension
-        
-    Parameters: 
+
+    Parameters:
     ds (xarray dataset): raw hdf4 file loaded into pandas dataframe
-  
-    Returns: 
+
+    Returns:
     dataset: A gridded xarray dataset object ready to be concatenated
     '''
     latitude = linspace(45, 30.03597, 417)
@@ -100,26 +100,27 @@ def clean_dataset(ds):
     return ds
 
 
+if __name__ == '__main__':
 
-## This are the subdirectories to crawl through
-sub_directories = [str(yr) for yr in range(1996, 2019)]
-# print(sub_directories)
-module_path = os.path.join(os.path.curdir,'remote_sensing_data')
+    ## This are the subdirectories to crawl through
+    sub_directories = [str(yr) for yr in range(1996, 2020)]
+    # print(sub_directories)
+    module_path = os.path.join(os.path.curdir,'chl_merged_dataset/')
+    
+    for sub_dir in sub_directories:
+        file_names = glob(os.path.join(module_path, sub_dir)+'/*.hdf')
+        for i, file_name in enumerate(sorted(file_names)):
+            ds = open_dataset(file_name)
+            if i == 0:
+                ds_all = clean_dataset(ds)
+            else:
+                ds = clean_dataset(ds)
+                ds_all = concat([ds_all, ds],dim='time')
+            if i == len(file_names) - 1:
+                print('Writing out to netcdf')
+                ds_all = ds_all.sortby('time')
+                ds_all.to_netcdf(os.path.join(module_path,'chl_merged_netcdf/')+'merged_chl_'+sub_dir+'.nc',mode='w')
 
-for sub_dir in sub_directories:
-    file_names = glob(os.path.join(module_path, sub_dir)+'/*.hdf')
-    for i, file_name in enumerate(sorted(file_names)):
-        ds = open_dataset(file_name)
-        if i == 0:
-            ds_all = clean_dataset(ds)
-        else:
-            ds = clean_dataset(ds)
-            ds_all = concat([ds_all, ds],dim='time')            
-        if i == len(file_names) - 1:
-            print('Writing out to netcdf')
-            ds_all = ds_all.sortby('time')
-            ds_all.to_netcdf(os.path.join(module_path,'chl_merged_netcdf/')+'merged_chl_'+sub_dir+'.nc',mode='w')
-        
 #
 #file_name =  os.path.join(module_path, 'remote_sensing_data/2000/S20001992000203_chla_comp.hdf')
 #
