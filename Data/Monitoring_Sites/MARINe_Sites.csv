@@ -1,0 +1,87 @@
+marine_site_name,site_code,latitude,longitude,mpa_designation,mpa_region,georegion,island,start_date,end_date,number_samples
+Alegria,ALEG,34.46714,-120.27738000000001,reference,South Coast,CA South,Mainland,2002-12-03,2018-12-07,33
+Anchor Point,SNAP,33.267136,-119.48723000000001,reference,South Coast,CA Channel Islands South,San_Nicolas,2014-12-02,2019-02-15,11
+Andrew Molera,MOL,36.280609999999996,-121.86317,SMR,Central Coast,CA Central,Mainland,2002-11-19,2018-11-23,39
+Arroyo Hondo,ARHO,34.473440000000004,-120.1454,reference,South Coast,CA South,Mainland,2002-12-02,2018-12-05,32
+Bird Rock,CTBR,33.45145,-118.48763000000001,SMCA,South Coast,CA Channel Islands South,Catalina,2002-10-18,2008-04-03,10
+Blowhole,BLOH,37.70118,-123.00383000000001,SC,North Central Coast,CA North Central,Southeast_Farallon,2017-12-16,2018-02-28,2
+Boat House,BOA,34.55388,-120.61166999999999,reference,Central Coast,CA Central,Mainland,2002-11-07,2018-12-04,38
+Bodega,BML,38.3182,-123.07365,SMR,North Central Coast,CA North Central,Mainland,2003-06-18,2019-06-16,23
+Bodega Head,BOD,38.3104,-123.0824,reference,North Central Coast,CA North Central,Mainland,2011-06-20,2011-06-20,1
+Bolinas Point,BOL,37.90354,-122.72721000000001,SMCA,North Central Coast,CA North Central,Mainland,2006-06-14,2018-06-18,13
+Boy Scout Camp,CLBS,33.00112,-118.54831999999999,reference,South Coast,CA Channel Islands South,San_Clemente,2011-06-05,2019-03-19,19
+Cabrillo I,CAB1,32.669470000000004,-117.2455,SMR,South Coast,CA South,Mainland,2002-11-03,2019-03-05,78
+Cabrillo II,CAB2,32.66766,-117.24526000000002,SMR,South Coast,CA South,Mainland,2002-11-03,2019-02-20,80
+Cabrillo III,CAB3,32.66583,-117.24417,SMR,South Coast,CA South,Mainland,2002-11-02,2019-02-20,73
+Cardiff Reef,CARE,32.99984,-117.27866999999999,reference,South Coast,CA South,Mainland,2002-11-02,2018-11-06,32
+Carpinteria,CARP,34.387029999999996,-119.51406999999999,reference,South Coast,CA South,Mainland,2002-12-04,2018-12-06,34
+Cat Rock,ANCR,34.00557,-119.41925,reference,South Coast,CA Channel Islands North,Anacapa,2003-01-28,2018-11-07,22
+Cayucos,CAY,35.447390000000006,-120.94981999999999,reference,Central Coast,CA Central,Mainland,2002-11-20,2018-11-25,40
+China Rocks,CHI,36.606159999999996,-121.95938999999998,reference,Central Coast,CA Central,Mainland,2007-11-09,2011-10-27,4
+Coal Oil Point,COPT,34.406929999999996,-119.87803999999998,SMCA,South Coast,CA South,Mainland,2002-11-19,2018-12-09,34
+Cosign,SNCO,33.274464,-119.57676000000001,reference,South Coast,CA Channel Islands South,San_Nicolas,2014-12-06,2019-02-19,10
+Crook Point,SMCP,34.02159,-120.37886999999999,reference,South Coast,CA Channel Islands North,San_Miguel,2003-01-14,2019-01-30,27
+Crystal Cove,CRCO,33.57078,-117.83773000000001,SMCA,South Coast,CA South,Mainland,2002-12-06,2018-12-08,34
+Cuyler Harbor,SMCH,34.04855,-120.33641999999999,SMR,South Coast,CA Channel Islands North,San_Miguel,2002-12-31,2019-02-02,27
+Dana Point,DAPT,33.4599,-117.71475,SMCA,South Coast,CA South,Mainland,2002-11-22,2018-10-25,30
+Davenport Landing,DAV,37.022079999999995,-122.21538000000001,reference,Central Coast,CA Central,Mainland,2007-10-12,2018-01-30,5
+Dead Sea Lion Flat,DSLF,37.698093,-122.99983999999999,SC,North Central Coast,CA North Central,Southeast_Farallon,2018-02-27,2018-02-27,1
+Diablo,DIA,35.22691,-120.87428,SMR,Central Coast,CA Central,Mainland,2007-11-26,2017-03-07,5
+East Point,SREP,33.9427,-119.96797,reference,South Coast,CA Channel Islands North,Santa_Rosa,2002-12-04,2019-04-15,29
+Eel Point,CLEP,32.918009999999995,-118.54668000000001,reference,South Coast,CA Channel Islands South,San_Clemente,2011-06-06,2019-04-16,18
+Ford Point,SRFP,33.91453,-120.05023999999999,reference,South Coast,CA Channel Islands North,Santa_Rosa,2002-12-05,2019-04-16,26
+Fossil Reef,SRFR,33.99315,-120.23758000000001,reference,South Coast,CA Channel Islands North,Santa_Rosa,2002-12-03,2019-04-18,24
+Fraser Cove,SCFC,34.06265,-119.91915,reference,South Coast,CA Channel Islands North,Santa_Cruz,2002-11-03,2019-03-18,28
+Garrapata,GAR,36.46904,-121.93444,reference,Central Coast,CA Central,Mainland,2007-11-10,2011-10-28,4
+Government Point,GPT,34.44334,-120.45655,SMR,South Coast,CA South,Mainland,2002-11-05,2018-12-06,20
+Harris Point,SMHP,34.073370000000004,-120.36322,SMR,South Coast,CA Channel Islands North,San_Miguel,2003-01-16,2019-02-01,27
+Hazards,HAZ,35.28966,-120.88325,reference,Central Coast,CA Central,Mainland,2002-11-03,2018-11-26,40
+Hopkins,HOP,36.6212,-121.9073,SMR,Central Coast,CA Central,Mainland,2002-11-05,2018-10-25,40
+Johnsons Lee,SRJL,33.90872,-120.08628999999999,reference,South Coast,CA Channel Islands North,Santa_Rosa,2002-12-01,2019-04-19,26
+Landing Cove,SBLC,33.48158,-119.02958000000001,reference,South Coast,CA Channel Islands South,Santa_Barbara,2002-11-19,2019-01-31,20
+Little Harbor,CTLH,33.38499,-118.4752,reference,South Coast,CA Channel Islands South,Catalina,2002-10-20,2008-04-04,10
+Marker Poles,SNMP,33.21868,-119.49562,reference,South Coast,CA Channel Islands South,San_Nicolas,2014-12-03,2019-03-17,11
+Middle East,ANME,34.0058,-119.39577,SMR,South Coast,CA Channel Islands North,Anacapa,2003-01-29,2012-04-25,16
+Middle West,ANMW,34.0059,-119.39648999999999,SMR,South Coast,CA Channel Islands North,Anacapa,2003-01-29,2018-11-06,26
+Mill Creek,MCR,35.97965,-121.49033999999999,reference,Central Coast,CA Central,Mainland,2002-12-05,2018-11-22,43
+Moat Creek,MOA,38.88091,-123.67475,reference,North Central Coast,CA North Central,Mainland,2010-06-27,2011-05-04,2
+Mussel Shoals,MUSH,34.35548,-119.44073,reference,South Coast,CA South,Mainland,2002-11-06,2018-12-08,32
+NW Talcott,SRNWT,34.009570000000004,-120.2176,reference,South Coast,CA Channel Islands North,Santa_Rosa,2002-12-02,2019-04-17,26
+Natural Bridges,NAT,36.94915,-122.06107,SMR,Central Coast,CA Central,Mainland,2007-10-10,2011-10-24,4
+Navy North,NANO,32.6926,-117.25327,reference,South Coast,CA South,Mainland,2002-11-04,2018-12-21,30
+Navy South,NASO,32.68288,-117.24956,reference,South Coast,CA South,Mainland,2002-11-05,2018-12-20,30
+North Jenner Beach,JEN,38.456179999999996,-123.14244,SMCA,North Central Coast,CA North Central,Mainland,2011-07-02,2011-07-02,1
+Occulto,OCC,34.88122,-120.63954,reference,Central Coast,CA Central,Mainland,2002-11-19,2018-12-08,38
+Old Stairs,OLDS,34.06612,-118.99779,reference,South Coast,CA South,Mainland,2002-11-03,2018-12-04,30
+Orizaba Cove,SCOC,34.04508,-119.72188,reference,South Coast,CA Channel Islands North,Santa_Cruz,2003-01-30,2019-05-13,19
+Otter Harbor,SMOH,34.05203,-120.40758000000001,reference,South Coast,CA Channel Islands North,San_Miguel,2003-01-15,2019-01-31,27
+Paradise Cove,PCOV,34.01201,-118.79225,SMR,South Coast,CA South,Mainland,2002-11-05,2018-11-08,31
+Piedras Blancas,PBL,35.66493,-121.28698999999999,SMR,Central Coast,CA Central,Mainland,2007-09-29,2011-10-28,4
+Point Fermin,PTFM,33.706790000000005,-118.28598999999998,reference,South Coast,CA South,Mainland,2002-11-04,2018-11-23,33
+Point Lobos,PTL,36.513659999999994,-121.94688000000001,SMR,Central Coast,CA Central,Mainland,2002-11-21,2018-11-05,35
+Point Pinos,PIN,36.63796,-121.93758000000001,SMR,Central Coast,CA Central,Mainland,2007-11-07,2011-10-26,4
+Point Sierra Nevada,PSN,35.72883,-121.31866000000001,reference,Central Coast,CA Central,Mainland,2002-11-04,2018-11-24,39
+Prisoners Harbor,SCPH,34.020379999999996,-119.6867,reference,South Coast,CA Channel Islands North,Santa_Cruz,2002-11-05,2019-03-17,26
+S Frenchys Cove,ANSFC,34.0066,-119.41077,SC,South Coast,CA Channel Islands North,Anacapa,2003-01-27,2018-11-08,28
+San Simeon Point,SSP,35.63455,-121.19561999999999,reference,Central Coast,CA Central,Mainland,2007-09-27,2011-11-22,4
+Sandhill Bluff,SAD,36.98017,-122.15503000000001,reference,Central Coast,CA Central,Mainland,2003-03-22,2018-10-11,36
+Saunders Reef,SAU,38.86138,-123.65361000000001,SMCA,North Central Coast,CA North Central,Mainland,2010-06-13,2011-05-07,2
+Scorpion Rock,SCSR,34.04552,-119.54685,SMR,South Coast,CA Channel Islands North,Santa_Cruz,2003-01-31,2018-12-07,24
+Scripps Reef,SCRE,32.87165,-117.25328,SMCA,South Coast,CA South,Mainland,2002-11-03,2018-11-09,30
+Sea Lion Rookery,SBSLR,33.47201,-119.03066000000001,SMR,South Coast,CA Channel Islands South,Santa_Barbara,2002-11-20,2019-01-30,16
+Sea Ranch,SEA,38.7305,-123.48863999999999,reference,North Central Coast,CA North Central,Mainland,2004-06-06,2019-06-16,17
+Shaws Cove,SHCO,33.54477,-117.79941000000001,SMR,South Coast,CA South,Mainland,2002-11-17,2018-12-07,30
+Shell Beach,SHB,35.16881,-120.69668,reference,Central Coast,CA Central,Mainland,2002-11-21,2019-02-20,41
+Slide Ranch,SLR,37.87406,-122.60094,reference,North Central Coast,CA North Central,Mainland,2002-12-03,2018-06-15,19
+Stairs,STA,34.73038,-120.61546000000001,SMR,Central Coast,CA Central,Mainland,2002-11-06,2018-12-07,40
+Stillwater,SWC,36.56087,-121.94053000000001,SMCA,Central Coast,CA Central,Mainland,2002-11-06,2018-11-06,35
+Swamis Beach,SWAM,33.0351,-117.29425,SMCA,South Coast,CA South,Mainland,2017-12-02,2018-11-08,2
+Terrace Point,TPT,36.948409999999996,-122.06456999999999,SMR,Central Coast,CA Central,Mainland,2002-11-18,2018-10-10,35
+Thousand Springs,SNTS,33.28505,-119.52983,reference,South Coast,CA Channel Islands South,San_Nicolas,2014-12-04,2019-02-16,10
+Trailer,SCTR,34.05187,-119.9032,reference,South Coast,CA Channel Islands North,Santa_Cruz,2002-11-02,2019-03-19,30
+Treasure Island,TRIS,33.51335,-117.75793,SMCA,South Coast,CA South,Mainland,2002-11-16,2018-10-26,35
+Vista del Mar,SIM,35.60414,-121.14232,SMCA,Central Coast,CA Central,Mainland,2007-09-28,2011-11-24,4
+West Cove,CLWC,33.01477,-118.60613000000001,reference,South Coast,CA Channel Islands South,San_Clemente,2011-06-03,2019-04-18,21
+White Point,WHPT,33.71539,-118.31961000000001,reference,South Coast,CA South,Mainland,2002-11-20,2018-11-07,31
+Wilder Ranch,WIL,36.94915,-122.10383,SMR,Central Coast,CA Central,Mainland,2007-10-11,2011-10-25,4
+Willows Anchorage,SCWA,33.96183,-119.75495,reference,South Coast,CA Channel Islands North,Santa_Cruz,2002-11-04,2019-03-20,26
