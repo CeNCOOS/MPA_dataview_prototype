@@ -18,14 +18,14 @@ def fix_coordinate(ds,latitude,longitude):
     '''
     Data is gridded but the coordinates are not included in the file. For this
     the placeholder coordintes (fakedimensions) should be replaced with
-    actual latitude and longitude values. 
-    
-    Parameters: 
+    actual latitude and longitude values.
+
+    Parameters:
     ds (xr.Dataset): single day raw hdf4 file
     latitude (np.array): 1-D array of latitude values
     longitude (np.array): 1-D array of longitude values
-    
-    Returns: 
+
+    Returns:
     ds (xr.Datatset): dataset with proper coordinates and the name corrected
 
     '''
@@ -37,14 +37,14 @@ def fix_coordinate(ds,latitude,longitude):
     return(ds)
 
 def fix_sign_error(ds):
-    ''' 
-    Negative and positive 32767 is added for blank values and should be 
+    '''
+    Negative and positive 32767 is added for blank values and should be
     replaced with nans.
-    
-    Parameters: 
+
+    Parameters:
     ds (xarry dataset): single hdf file with erroneous values
-  
-    Returns: 
+
+    Returns:
     ds: fixed values
     '''
     npp_array = ds['npp'].values
@@ -65,7 +65,7 @@ def add_time_coordinate(ds, doy):
     return(ds)
 
 def clean_dataset(ds, doy):
-    ''' 
+    '''
     Given a xarray dataset, clean up the data for it to be concatinated into
     an annual dataset. This involves sveral steps:
         - renaming and assigning the latitude and longitude
@@ -73,12 +73,12 @@ def clean_dataset(ds, doy):
         - Fixing a sign error
         - masking landvalues and null values (pixelValues == -32767,32767)
         - Adding a time dimension
-        
-    Parameters: 
+
+    Parameters:
     ds (xarray dataset): raw hdf4 file loaded into pandas dataframe
     doy (int): day of year represented as an integer
-  
-    Returns: 
+
+    Returns:
     dataset: A gridded xarray dataset object ready to be concatenated
     '''
     latitude = linspace(45, 30.03597, 417)
@@ -88,39 +88,22 @@ def clean_dataset(ds, doy):
     ds = add_time_coordinate(ds, doy)
     return ds
 
+if __name__ == '__main__':
+    # This are the subdirectories to crawl through
+    sub_directories = [str(yr) for yr in range(1996, 2021)]
+    module_path = os.path.join(os.path.curdir,'NPP_winsoft_dataset/')
 
-# This are the subdirectories to crawl through
-sub_directories = [str(yr) for yr in range(1996, 2019)]
-# print(sub_directories)
-module_path = os.path.join(os.path.curdir,'remote_sensing_data/NPP_winsoft_dataset/')
-
-for num, sub_dir in enumerate(sub_directories):
-    file_names = glob(os.path.join(module_path, sub_dir)+'/*.hdf')
-    for i, file_name in enumerate(sorted(file_names)):
-        doy = int(os.path.basename(file_name)[5:8]) # hack to get the day of year out of the filename
-        ds = open_dataset(file_name)
-        if i == 0:
-            ds_all = clean_dataset(ds, doy)
-        else:
-            ds = clean_dataset(ds, doy)
-            ds_all = concat([ds_all, ds],dim='time')            
-        if i == len(file_names) - 1:
-            print('Writing out to netcdf {} of {}'.format(num,len(sub_directories)-1))
-            ds_all = ds_all.sortby('time')
-            ds_all.to_netcdf(os.path.join(module_path,'npp_netcdf/')+'npp_'+sub_dir+'.nc',mode='w')
-#        
-#
-#file_name =  os.path.join(module_path, 'remote_sensing_data/2000/S20001992000203_chla_comp.hdf')
-#
-#ds = open_dataset("./remote_sensing_data/1996/O19963541996358_chla_comp.hdf")
-#ds1 = clean_dataset(ds)
-#print(ds1)
-##
-##
-##file_name =  os.path.join(module_path, 'remote_sensing_data/2000/S20002002000204_chla_comp.hdf')
-#ds = open_dataset('./remote_sensing_data/1996/O19963601996364_chla_comp.hdf')
-#ds2 = clean_dataset(ds)
-#print(ds2)
-##
-#ds3 = concat([ds1,ds2],dim='time')
-#print(ds3)
+    for num, sub_dir in enumerate(sub_directories):
+        file_names = glob(os.path.join(module_path, sub_dir)+'/*.hdf')
+        for i, file_name in enumerate(sorted(file_names)):
+            doy = int(os.path.basename(file_name)[5:8]) # hack to get the day of year out of the filename
+            ds = open_dataset(file_name)
+            if i == 0:
+                ds_all = clean_dataset(ds, doy)
+            else:
+                ds = clean_dataset(ds, doy)
+                ds_all = concat([ds_all, ds],dim='time')
+            if i == len(file_names) - 1:
+                print('Writing out to netcdf {} of {}'.format(num,len(sub_directories)-1))
+                ds_all = ds_all.sortby('time')
+                ds_all.to_netcdf(os.path.join(module_path,'npp_netcdf/')+'npp_'+sub_dir+'.nc',mode='w')
