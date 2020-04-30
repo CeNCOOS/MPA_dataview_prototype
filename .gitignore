@@ -162,3 +162,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+Monitoring_Site_Map.html
+*.html
