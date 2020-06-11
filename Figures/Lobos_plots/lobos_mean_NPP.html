@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.0.min.js" integrity="sha384-5Y+xuMRAbgBj/2WKUiL8yzV4fBFic1HJPo2hT3pq2IsEzbsJjj8kT2i0b1lZ7C2N" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="cc273ff1-c036-45ee-8db3-b407e9414f98" data-root-id="1391"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1585">
+          {"f92d56dc-6a88-4106-bae8-8f78eb56eb4b":{"roots":{"references":[{"attributes":{"data_source":{"id":"1437"},"glyph":{"id":"1438"},"hover_glyph":null,"muted_glyph":{"id":"1440"},"nonselection_glyph":{"id":"1439"},"selection_glyph":null,"view":{"id":"1442"}},"id":"1441","type":"GlyphRenderer"},{"attributes":{"axis":{"id":"1400"},"ticker":null},"id":"1403","type":"Grid"},{"attributes":{"source":{"id":"1437"}},"id":"1442","type":"CDSView"},{"attributes":{"below":[{"id":"1400"}],"center":[{"id":"1403"},{"id":"1407"},{"id":"1435"}],"left":[{"id":"1404"}],"plot_height":700,"plot_width":1500,"renderers":[{"id":"1426"},{"id":"1441"}],"title":{"id":"1421"},"toolbar":{"id":"1414"},"x_range":{"id":"1392"},"x_scale":{"id":"1396"},"y_range":{"id":"1394"},"y_scale":{"id":"1398"}},"id":"1391","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1431","type":"BasicTickFormatter"},{"attributes":{"label":{"value":"Point Lobos SMR"},"renderers":[{"id":"1441"}]},"id":"1452","type":"LegendItem"},{"attributes":{"click_policy":"mute","items":[{"id":"1436"},{"id":"1452"}]},"id":"1435","type":"Legend"},{"attributes":{},"id":"1412","type":"ResetTool"},{"attributes":{},"id":"1451","type":"Selection"},{"attributes":{},"id":"1413","type":"HelpTool"},{"attributes":{},"id":"1394","type":"DataRange1d"},{"attributes":{"axis_label":"Year","formatter":{"id":"1433"},"ticker":{"id":"1401"}},"id":"1400","type":"LinearAxis"},{"attributes":{},"id":"1463","type":"Selection"},{"attributes":{},"id":"1398","type":"LinearScale"},{"attributes":{},"id":"1433","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"1422"}},"id":"1427","type":"CDSView"},{"attributes":{},"id":"1462","type":"UnionRenderers"},{"attributes":{"data_source":{"id":"1422"},"glyph":{"id":"1423"},"hover_glyph":null,"muted_glyph":{"id":"1425"},"nonselection_glyph":{"id":"1424"},"selection_glyph":null,"view":{"id":"1427"}},"id":"1426","type":"GlyphRenderer"},{"attributes":{},"id":"1405","type":"BasicTicker"},{"attributes":{},"id":"1450","type":"UnionRenderers"},{"attributes":{"fill_alpha":0,"fill_color":"orange","x":{"field":"x"},"y1":{"field":"y1"},"y2":{"field":"y2"}},"id":"1425","type":"VArea"},{"attributes":{},"id":"1396","type":"LinearScale"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1434","type":"BoxAnnotation"},{"attributes":{"axis_label":"Annual mean NPP","formatter":{"id":"1431"},"ticker":{"id":"1405"}},"id":"1404","type":"LinearAxis"},{"attributes":{"label":{"value":"Central Coast Bioregion"},"renderers":[{"id":"1426"}]},"id":"1436","type":"LegendItem"},{"attributes":{"fill_alpha":0.1,"fill_color":"orange","x":{"field":"x"},"y1":{"field":"y1"},"y2":{"field":"y2"}},"id":"1424","type":"VArea"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1408"},{"id":"1409"},{"id":"1410"},{"id":"1411"},{"id":"1412"},{"id":"1413"}]},"id":"1414","type":"Toolbar"},{"attributes":{},"id":"1408","type":"PanTool"},{"attributes":{"line_alpha":0.1,"x":{"field":"x"},"y":{"field":"y"}},"id":"1440","type":"Line"},{"attributes":{"text":"Mean Annual Net Primary Production"},"id":"1421","type":"Title"},{"attributes":{},"id":"1401","type":"BasicTicker"},{"attributes":{"data":{"x":[2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020],"y1":{"__ndarray__":"MzMzM+NgxUAzMzMzs/HKQD+C+wgu7MBATL/0S/9qwUB9xlmATa/DQOmXful3XcVA9Uu/9Cv8xEA3OkFP693FQDL9k8EcLsVAm0G8SFZywUDslf6crdnEQEEJbzTVAMBAq8uwVzo6wEDE5ApiAvLDQDsuD+79nL9ASK1rr2YLw0CMLrroymTCQKponlDL6sVAzgJsPmM0wEClSZMmTSaxQIKnW/PD/qVA","dtype":"float64","shape":[21]},"y2":{"__ndarray__":"AAAAAAAAAEAAAAAAAAAIQBoQSu4ULQxAbtu2bdu2BUCfcRZg8xkPQJOQWcOB2A9A5aaieUItEEDZiZ3YiZ0OQHGlewPKxA1A0id90id9D0Acx3Ecx3EMQLsfHJM8ZA9AfmtkdRn2DkAo6t8IZfQOQLqBrGKLchJAfYduUz3GEkAz7JX+nO0QQPIhSLmpaBBAZsuWLVu2EED/yWCO6Z88QCNl4OnW/DVA","dtype":"float64","shape":[21]}},"selected":{"id":"1451"},"selection_policy":{"id":"1450"}},"id":"1422","type":"ColumnDataSource"},{"attributes":{"axis":{"id":"1404"},"dimension":1,"ticker":null},"id":"1407","type":"Grid"},{"attributes":{"overlay":{"id":"1434"}},"id":"1410","type":"BoxZoomTool"},{"attributes":{"data":{"x":[2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020],"y":{"__ndarray__":"Znn3r02vkUBcOzDXDryXQOWnQRRwWZNAdIZ1itbMj0A+3uM9XkGgQN5RpcPtY6BAS0JmDQfYm0ACLdAC7YGVQHp+Wje/Po5AgCtFCZU1hUDuskni98WPQMLpwfVqoI1APD4EKbdukkD89FYNn5ygQKJXOy4P0JZA7Fx5QHLylEDMH7Y+89SZQHhRcUOgHptAArNrMhXomkCjE/S0NqSMQJjQXkJ7uXlA","dtype":"float64","shape":[21]}},"selected":{"id":"1463"},"selection_policy":{"id":"1462"}},"id":"1437","type":"ColumnDataSource"},{"attributes":{},"id":"1411","type":"SaveTool"},{"attributes":{"fill_alpha":0.4,"fill_color":"orange","x":{"field":"x"},"y1":{"field":"y1"},"y2":{"field":"y2"}},"id":"1423","type":"VArea"},{"attributes":{"line_alpha":0.1,"x":{"field":"x"},"y":{"field":"y"}},"id":"1439","type":"Line"},{"attributes":{"line_alpha":0.75,"x":{"field":"x"},"y":{"field":"y"}},"id":"1438","type":"Line"},{"attributes":{},"id":"1392","type":"DataRange1d"},{"attributes":{},"id":"1409","type":"WheelZoomTool"}],"root_ids":["1391"]},"title":"Bokeh Application","version":"2.0.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1585').textContent;
+                  var render_items = [{"docid":"f92d56dc-6a88-4106-bae8-8f78eb56eb4b","root_ids":["1391"],"roots":{"1391":"cc273ff1-c036-45ee-8db3-b407e9414f98"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
